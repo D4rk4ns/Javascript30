@@ -21,7 +21,13 @@
     </ul>
     <form class="add-items">
       <input type="text" name="item" placeholder="Item Name" required>
-      <input type="submit" value="+ Add Item">
+      <input type="submit" value="➕ Add Item">
+      
+    </form>
+    <form class="update-items">
+      <input type="button" value="🧹 Clear items" onclick="clearItems()">
+      <input type="button" value="🌞 Check all" onclick="checkAll()">
+      <input type="button" value="🌑 Uncheck all" onclick="unCheckAll()">
     </form>
   </div>
 
@@ -62,6 +68,28 @@
     items[index].done = !items[index].done;
     localStorage.setItem('items', JSON.stringify(items));
     populateList(items, itemsList);
+  }
+
+  function checkAll(){
+    items.forEach(item => {
+      item.done = true;
+    });
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);
+  }
+
+  function unCheckAll(){
+    items.forEach(item => {
+      item.done = false;
+    });
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);
+  }
+
+  function clearItems(){
+    localStorage.removeItem('items');
+    location.reload();
+    
   }
 
   addItems.addEventListener('submit', addItem);

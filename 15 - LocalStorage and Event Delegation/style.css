@@ -79,3 +79,14 @@ h2 {
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.update-items{
+  margin-top: 20px;
+  display: flex;
+}
+
+.update-items input {
+  padding: 8px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
