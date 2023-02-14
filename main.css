@@ -24,8 +24,8 @@ body {
   animation-delay: -40s;
 }
 
-.imgScroll div:hover,
-.imgScroll div:hover:nth-child(2){
+.imgScroll:hover div,
+.imgScroll:hover div:nth-child(2){
   animation-play-state: paused;
 }
 
@@ -53,19 +53,20 @@ body {
 .imgScroll div img {
   margin: 0 25px;
   max-width: 300px;
-  border: 10px solid transparent;
+  border: 1px solid transparent;
   box-shadow: 0px 0px 10px #7289da;
   transition: all 0.3s ease;
 }
 
 .imgScroll div img:hover {
-  border: 10px solid #fff;
+  border: 1px solid #7289da;
+  transform: scale(1.2);
   box-shadow: 0px 0px 20px #7289da;
 }
 
 .imgScroll div:hover img {
   opacity: 0.05;
-  filter: blur(1px);
+  filter: blur(5px);
 }
 
 .imgScroll div img:hover {
