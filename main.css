@@ -1,97 +1,157 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+} 
+
 body {
-  background-color: #1c1c1c;
-  font-family: 'Arial', sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh; */
+    background: rgb(0,45,98);
+    background: linear-gradient(90deg, rgba(0,45,98,0.9808298319327731) 0%, rgba(0,57,166,1) 48%, rgba(0,45,98,0.9556197478991597) 100%);
 }
 
-.imgScroll {
-  position: absolute;
-  left: 0;
-  padding: 60px 0;
-  width: 100%;
-  display: flex;
-  overflow-x: hidden;
+h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #ffeb3b;
 }
 
-.imgScroll div {
-  display: flex;
-  animation: animate1 40s linear infinite;
-  animation-delay: -60s;
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+    
+    margin: 3px 1px;
+    
 }
 
-.imgScroll div:nth-child(2){
-
-  animation: animate2 40s linear infinite;
-  animation-delay: -40s;
+.box::before, 
+.box::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(315deg,#00ccff,#d400d4);
+    inset: -80px 100px;
+    transition: 0.5s;
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation: animate 8s linear infinite;
 }
 
-.imgScroll:hover div,
-.imgScroll:hover div:nth-child(2){
-  animation-play-state: paused;
+.box::after {
+    background: linear-gradient(315deg,#ffeb3b,#e91e63);
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation-delay: -2s;
 }
 
-
-@keyframes animate1 {
-  0%{
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+.box:hover::before, 
+.box:hover::after {
+    animation-play-state: paused;
+    inset: -80px 80px;
 }
 
-@keyframes animate2 {
-  0%{
-    transform: translateX(0%);
-  }
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: translateX(-200%);
-  }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
-.imgScroll div img {
-  margin: 0 25px;
-  max-width: 300px;
-  border: 1px solid transparent;
-  box-shadow: 0px 0px 10px #7289da;
-  transition: all 0.3s ease;
+.box i {
+    position: absolute;
+    inset: 3px;
+    background: #0e1538;
+    z-index: 1;
 }
 
-.imgScroll div img:hover {
-  border: 1px solid #7289da;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 20px #7289da;
+.box .content {
+    position: absolute;
+    inset: 20px;
+    background: #0d122c;
+    border: 3px solid #070c23;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
 }
 
-.imgScroll div:hover img {
-  opacity: 0.05;
-  filter: blur(5px);
-}
-
-.imgScroll div img:hover {
-  opacity: 1;
-  filter: blur(0px);
-}
-
-/* Estilos para pantallas móviles */
-@media only screen and (max-width: 767px) {
-  
-  .img {
+.box .content img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
+    height: 100%;
+    object-fit: fill;
+    transition: 0.5s;
+    pointer-events: none;
 }
 
-/* Estilos para pantallas de tableta */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .img {
-    width: 48%;
-  }
+.box:hover .content img {
+    opacity: 0;
 }
 
-/* Estilos para pantallas de escritorio */
-@media only screen and (min-width: 992px) {
-  .img {
-    width: 23%;
-  }
+.box .content h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.box .content:hover h2 { 
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.box .content h2 span { 
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+
+
+.box .content a {
+    opacity: 0%;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.box .content:hover a {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.box .content a:hover {
+    letter-spacing: 0.2em;
 }

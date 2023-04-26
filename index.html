@@ -1,59 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript 30</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <h1>
+        #JavaScript30
+    </h1>
 
-  <div class="imgScroll">
+    <div class="container py-5">
+        <div class="row row-cols-auto g-4 gap-3 justify-content-evenly">
+                <div class="box col" style="--i:0;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/01.jpg">
+                        <h2>01<br><span>JavaScript Drum Kit</span></h2>
+                        <a href="./projects/01 - JavaScript Drum Kit/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:1;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/02.jpg">
+                        <h2>02<br><span>CSS + JS Clock</span></h2>
+                        <a href="./projects/02 - CSS + JS Clock/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:2;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/03.jpg">
+                        <h2>03<br><span>Playing with CSS Variables and JS</span></h2>
+                        <a href="./projects/03 - Playing with CSS Variables and JS/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:3;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/04.jpg">
+                        <h2>04<br><span>Array Cardio Day 1</span></h2>
+                        <a href="./projects/04 - Array Cardio Day 1/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:4;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/05.jpg">
+                        <h2>05<br><span>Flex Panels Image Gallery</span></h2>
+                        <a href="./projects/05 - Flex Panel Gallery/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:5;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/06.jpg">
+                        <h2>06<br><span>Ajax Type Ahead</span></h2>
+                        <a href="./projects/06 - Type Ahead/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:6;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/07.jpg">
+                        <h2>07<br><span>Array Cardio Day 2</span></h2>
+                        <a href="./projects/07 - Array Cardio Day 2/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:7;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/08.jpg">
+                        <h2>08<br><span>Fun with HTML5 Canvas</span></h2>
+                        <a href="./projects/08 - Fun with HTML5 Canvas/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:8;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/09.jpg">
+                        <h2>09<br><span>14 Must Know Dev Tools Tricks</span></h2>
+                        <a href="./projects/09 - Dev Tools Domination/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:9;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/10.jpg">
+                        <h2>10<br><span>Hold Shift and Check Multiple Checkboxes</span></h2>
+                        <a href="./projects/10 - Hold Shift and Check Checkboxes/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:10;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/11.jpg">
+                        <h2>11<br><span>Custom Video Player</span></h2>
+                        <a href="./projects/11 - Custom Video Player/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:11;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/12.jpg">
+                        <h2>12<br><span>Key Sequence Detection</span></h2>
+                        <a href="./projects/12 - Key Sequence Detection/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:12;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/13.jpg">
+                        <h2>13<br><span>Slide in on Scroll</span></h2>
+                        <a href="./projects/13 - Slide in on Scroll/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:13;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/14.jpg">
+                        <h2>14<br><span>Objects and Arrays, References vs Copying</span></h2>
+                        <a href="./projects/14 - JavaScript References VS Copying/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:14;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/15.jpg">
+                        <h2>15<br><span>LocalStorage and Event Delegation</span></h2>
+                        <a href="./projects/15 - LocalStorage and Event Delegation/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:15;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/16.jpg">
+                        <h2>16<br><span>CSS Text Shadow Mouse Move Effect</span></h2>
+                        <a href="./projects/16 - Mouse Move Shadow/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:16;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/17.jpg">
+                        <h2>17<br><span>Sort Without Articles</span></h2>
+                        <a href="./projects/17 - Sort Without Articles/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:17;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/18.jpg">
+                        <h2>18<br><span>Adding Up Times with Reduce</span></h2>
+                        <a href="./projects/18 - Adding Up Times with Reduce/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:18;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/19.jpg">
+                        <h2>19<br><span>Webcam Fun</span></h2>
+                        <a href="./projects/19 - Webcam Fun/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:19;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/20.jpg">
+                        <h2>20<br><span>Speech Detection</span></h2>
+                        <a href="./projects/20 - Speech Detection/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:20;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/21.jpg">
+                        <h2>21<br><span>Geolocation</span></h2>
+                        <a href="./projects/21 - Geolocation/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:21;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/22.jpg">
+                        <h2>22<br><span>Follow Along Link Highlighter</span></h2>
+                        <a href="./projects/22 - Follow Along Link Highlighter/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:22;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/23.jpg">
+                        <h2>23<br><span>Speech Synthesis</span></h2>
+                        <a href="./projects/23 - Speech Synthesis/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:23;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/24.jpg">
+                        <h2>24<br><span>Sticky Nav</span></h2>
+                        <a href="./projects/24 - Sticky Nav/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:24;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/25.jpg">
+                        <h2>25<br><span>Event Capture, Propagation, Bubbling and Once</span></h2>
+                        <a href="./projects/25 - Event Capture, Propagation, Bubbling and Once/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:25;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/26.jpg">
+                        <h2>26<br><span>Stripe Follow Along Dropdown</span></h2>
+                        <a href="./projects/26 - Stripe Follow Along Nav/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:26;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/27.jpg">
+                        <h2>27<br><span>Click and Drag to Scroll</span></h2>
+                        <a href="./projects/27 - Click and Drag/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:27;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/28.jpg">
+                        <h2>28<br><span>Video Speed Controller UI</span></h2>
+                        <a href="./projects/28 - Video Speed Controller/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:28;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/29.jpg">
+                        <h2>29<br><span>Countdown Clock</span></h2>
+                        <a href="./projects/29 - Countdown Timer/index.html">See more...</a>
+                    </div>
+                </div>
+                <div class="box col" style="--i:29;">
+                    <i></i>
+                    <div class="content">
+                        <img src="./images/30.jpg">
+                        <h2>30<br><span>Whack A Mole Game</span></h2>
+                        <a href="./projects/30 - Whack A Mole/index.html">See more...</a>
+                    </div>
+                </div>
+        </div>
 
-    <div>
-      <img src="./images/01.jpg" alt="JavaScript Drum Kit">
-      <img src="./images/02.jpg" alt="CSS + JS Clock">
-      <img src="./images/03.jpg" alt="Playing with CSS Variables">
-      <img src="./images/04.jpg" alt="Array Cardio Day 1">
-      <img src="./images/05.jpg" alt="Flex Panel Gallery">
-      <img src="./images/06.jpg" alt="Type Ahead">
-      <img src="./images/07.jpg" alt="Array Cardio Day 2">
-      <img src="./images/08.jpg" alt="Fun with HTML5 Canvas">
-      <img src="./images/09.jpg" alt="Dev Tools Domination">
-      <img src="./images/10.jpg" alt="Hold Shift and Check Checkboxes">
-      <img src="./images/11.jpg" alt="Custom video player">
-      <img src="./images/12.jpg" alt="Key Sequence Detection">
-      <img src="./images/13.jpg" alt="Slide-In on Scroll">
-      <img src="./images/14.jpg" alt="JavaScript References VS Copying">
-      <img src="./images/15.jpg" alt="LocalStorage and Event Delegation">
     </div>
-    
-    <div>
-      <img src="./images/16.jpg" alt="Mouse Move Shadow">
-      <img src="./images/17.jpg" alt="Sort Without Articles">
-      <img src="./images/18.jpg" alt="Adding Up Times with Reduce">
-      <img src="./images/19.jpg" alt="Webcam Fun">
-      <img src="./images/20.jpg" alt="Speech Detection">
-      <img src="./images/21.jpg" alt="Geolocation">
-      <img src="./images/22.jpg" alt="Follow Along Link Highlighter">
-      <img src="./images/23.jpg" alt="Speech Synthesis">
-      <img src="./images/24.jpg" alt="Sticky Nav">
-      <img src="./images/25.jpg" alt="Event Capture, Propagation, Bubbling and Once">
-      <img src="./images/26.jpg" alt="Stripe Follow Along Nav">
-      <img src="./images/27.jpg" alt="Click and Drag">
-      <img src="./images/28.jpg" alt="Video Speed Controller">
-      <img src="./images/29.jpg" alt="Countdown Timer">
-      <img src="./images/30.jpg" alt="Whack a Mole">
-    </div>
 
-  </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
